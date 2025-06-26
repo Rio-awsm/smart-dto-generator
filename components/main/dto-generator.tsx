@@ -52,8 +52,8 @@ export function DTOGenerator() {
   return (
     <div className="container mx-auto p-6 max-w-7xl">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-          AI-Powered DTO & Schema Generator
+        <h1 className="text-4xl font-bold mb-2 text-primary bg-clip-text">
+          DTO Buddy
         </h1>
         <p className="text-lg text-muted-foreground">
           Create complex TypeScript DTOs and Mongoose schemas with AI

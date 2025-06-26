@@ -85,7 +85,7 @@ export function SchemaBuilder({
             </div>
 
             {showAdvanced && (
-              <div className="space-y-4 p-4 border rounded-lg bg-gray-50">
+              <div className="space-y-4 p-4 border rounded-lg">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center space-x-2">
                     <Checkbox

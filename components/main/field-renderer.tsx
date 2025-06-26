@@ -8,35 +8,35 @@ import { Collapsible, CollapsibleContent } from "@/components/ui/collapsible";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from "@/components/ui/select";
 import { FIELD_TYPE_COLORS } from "@/lib/constants";
 import {
-    createNewField,
-    removeFieldFromSchema,
-    updateFieldInSchema,
+  createNewField,
+  removeFieldFromSchema,
+  updateFieldInSchema,
 } from "@/lib/functions/fiels-utils";
 import type { DTOSchema, Field, FieldType } from "@/types/schema";
 import {
-    Braces,
-    Calendar,
-    ChevronDown,
-    ChevronRight,
-    Database,
-    FileText,
-    Hash,
-    Layers,
-    Link,
-    List,
-    Plus,
-    Settings,
-    ToggleLeft,
-    Trash2,
-    Type,
+  Braces,
+  Calendar,
+  ChevronDown,
+  ChevronRight,
+  Database,
+  FileText,
+  Hash,
+  Layers,
+  Link,
+  List,
+  Plus,
+  Settings,
+  ToggleLeft,
+  Trash2,
+  Type,
 } from "lucide-react";
 
 const FIELD_TYPE_ICONS = {
@@ -343,7 +343,7 @@ export function FieldRenderer({
                 </div>
 
                 {field.arrayType === "object" && (
-                  <div className="border rounded-lg p-4 bg-gray-50">
+                  <div className="border rounded-lg p-4">
                     <div className="flex items-center justify-between mb-4">
                       <Label className="text-sm font-medium">
                         Array Object Fields
@@ -384,7 +384,7 @@ export function FieldRenderer({
 
             {/* Object Configuration */}
             {field.type === "object" && (
-              <div className="border rounded-lg p-4 bg-gray-50">
+              <div className="border rounded-lg p-4">
                 <div className="flex items-center justify-between mb-4">
                   <Label className="text-sm font-medium">Object Fields</Label>
                   <Button variant="outline" size="sm" onClick={addNestedField}>
