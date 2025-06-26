@@ -1,4 +1,4 @@
-import DTOGenerator from "@/components/main/dto-generator";
+import { DTOGenerator } from "@/components/main/dto-generator";
 
 export default function Home() {
   return (
